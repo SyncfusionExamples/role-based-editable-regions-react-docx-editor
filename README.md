@@ -21,12 +21,10 @@ This repository is a runnable sample for Syncfusion React DOCX Editor. It demons
 - .NET 10 SDK
 - A current Chromium-based browser (Chrome or Microsoft Edge)
 
-A Syncfusion license key is optional. Without `VITE_SYNCFUSION_LICENSE` and `SYNCFUSION_LICENSE`, the editor may show a license banner. Do not commit license keys.
-
 ## Repository layout
 
 ```text
-Client-side/     React + TypeScript sample
+Client-side/     React sample
 Server-side/     ASP.NET Core Document Editor and permission API
 ```
 
@@ -52,28 +50,6 @@ npm run dev
 
 Open `http://localhost:5173`. Vite proxies `/api` to the self-hosted service. The sample does **not** use Syncfusion's public demo service URL.
 
-### Build and test
-
-Frontend:
-
-```bash
-cd client
-npm ci
-npm run dev
-npm run build
-npm test -- --run
-npm run lint
-```
-
-Backend:
-
-```bash
-cd server
-dotnet restore
-dotnet run
-dotnet test
-dotnet publish -c Release
-```
 
 ## Demo profiles
 
@@ -109,8 +85,6 @@ The sample keeps three concerns separate:
 - **Authentication/authorization** belongs to the backend. This sample only mocks a permission lookup.
 - **Permission-to-bookmark mapping** is returned by `/api/permissions`.
 - **Editing restrictions** are applied in the React Document Editor with `currentUser`, `selectBookmark()`, `insertEditingRegion()`, and `enforceProtection(..., "ReadOnly")`.
-
-See [docs/architecture.md](docs/architecture.md) for the runtime flow.
 
 ## Sample document
 
