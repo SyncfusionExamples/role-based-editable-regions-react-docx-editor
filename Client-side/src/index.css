@@ -1,0 +1,65 @@
+@import '@syncfusion/ej2-base/styles/tailwind3.css';
+@import '@syncfusion/ej2-buttons/styles/tailwind3.css';
+@import '@syncfusion/ej2-inputs/styles/tailwind3.css';
+@import '@syncfusion/ej2-popups/styles/tailwind3.css';
+@import '@syncfusion/ej2-lists/styles/tailwind3.css';
+@import '@syncfusion/ej2-navigations/styles/tailwind3.css';
+@import '@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
+@import '@syncfusion/ej2-dropdowns/styles/tailwind3.css';
+@import '@syncfusion/ej2-ribbon/styles/tailwind3.css';
+@import '@syncfusion/ej2-documenteditor/styles/tailwind3.css';
+
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --bg: #f3f6f9;
+  --surface: #ffffff;
+  --ink: #1b1f24;
+  --muted: #5b6675;
+  --line: #d7dee8;
+  --brand: #0f6cbd;
+  --brand-strong: #0c5aa0;
+  --protected: #0e7c66;
+  --warning: #8a6116;
+  --warning-bg: #fff4d5;
+  --error: #b10e1c;
+  --error-bg: #fde7e9;
+  --idle: #5b6675;
+  --shadow: 0 1px 2px rgba(16, 24, 40, 0.08);
+  --focus: 0 0 0 3px rgba(15, 108, 189, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+button,
+select,
+input,
+a {
+  font: inherit;
+}
+
+button:focus-visible,
+select:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+.muted {
+  color: var(--muted);
+}
